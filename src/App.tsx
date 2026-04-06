@@ -224,7 +224,7 @@ export default function App() {
             {[
               { title: "Anime Figures 🎌", desc: "Q Posket, Grandista & more", img: IMG_ANIME_GRID, id: 'anime' },
               { title: "Bead Bracelets 🌸", desc: "Handmade pastel daisy jewelry", img: IMG_BRACELET_PILE, id: 'bracelets' },
-              { title: "Bead Supplies 🧵", desc: "Candy, fish & pearl beads", img: IMG_BEADS_PEARL, id: 'beads' },
+              { title: "Bead Supplies 🧵", desc: "Candy, fish & pearl beads", img: IMG_BEADS_CANDY_FISH, id: 'beads' },
               { title: "Plush & Collectibles 🧸", desc: "Cute toys & anime plushies", img: IMG_PLUSH_REPAIR, id: 'plush' },
               { title: "Cellphone Repair 📱", desc: "Screens, parts & accessories", img: IMG_PLUSH_REPAIR, id: 'repair' },
             ].map((cat, idx) => (
@@ -236,7 +236,7 @@ export default function App() {
                 <img 
                   src={cat.img} 
                   alt={cat.title} 
-                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${cat.id === 'repair' ? 'object-bottom' : ''}`}
+                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${cat.id === 'repair' ? 'object-bottom' : ''} ${cat.id === 'plush' ? 'object-top' : ''}`}
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-chaya-navy/80 via-chaya-navy/20 to-transparent"></div>
@@ -246,6 +246,41 @@ export default function App() {
                   <button className="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full text-sm font-bold flex items-center gap-1 hover:bg-white hover:text-chaya-navy transition-colors">
                     View Items <ChevronRight size={16} />
                   </button>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BEAD SUPPLIES VARIANTS DETAIL */}
+      <section className="py-20 bg-chaya-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-4xl font-heading text-chaya-navy mb-4">Bead Supplies Variants 🧵</h3>
+            <p className="text-gray-600">Choose from our colorful selection of novelty beads!</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              { name: "Candy/Fish Beads", price: "₱50.00", specs: "50g | 55pcs | 20mm", img: IMG_BEADS_CANDY_FISH },
+              { name: "Square Candy Beads", price: "₱50.00", specs: "40pcs | 21.5x17mm", img: IMG_BEADS_SQUARE },
+              { name: "Pastel Pearl Beads", price: "₱55.00", specs: "100g | 8mm", img: IMG_BEADS_PEARL },
+            ].map((variant, idx) => (
+              <motion.div 
+                key={idx}
+                whileHover={{ scale: 1.03 }}
+                className="bg-white rounded-3xl overflow-hidden shadow-md border border-chaya-teal/10"
+              >
+                <div className="h-64 overflow-hidden">
+                  <img src={variant.img} alt={variant.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                </div>
+                <div className="p-6 text-center">
+                  <h4 className="font-bold text-chaya-navy text-lg mb-1">{variant.name}</h4>
+                  <div className="text-chaya-teal font-bold text-xl mb-2">{variant.price}</div>
+                  <p className="text-gray-500 text-sm mb-4">{variant.specs}</p>
+                  <a href={FB_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-chaya-blue/20 text-chaya-navy px-6 py-2 rounded-full font-bold text-sm hover:bg-chaya-blue/40 transition-colors">
+                    Inquire Now
+                  </a>
                 </div>
               </motion.div>
             ))}
@@ -268,8 +303,9 @@ export default function App() {
                 { name: 'Bundle Deal "21+3 FREE = 24pcs"', price: 'Promo', img: IMG_PROMO_BANNER },
                 { name: 'Q Posket Figures', price: '₱500+', img: IMG_ANIME_GRID },
                 { name: 'Box Stock Anime Figures', price: '₱450+', img: IMG_ANIME_BOX },
-                { name: 'Pastel Pearl Beads 100g', price: '₱55.00', img: IMG_BEADS_PEARL },
-                { name: 'Candy Beads 40pcs', price: '₱50.00', img: IMG_BEADS_SQUARE },
+                { name: 'Candy/Fish Beads (50g)', price: '₱50.00', img: IMG_BEADS_CANDY_FISH },
+                { name: 'Square Candy Beads (40pcs)', price: '₱50.00', img: IMG_BEADS_SQUARE },
+                { name: 'Pastel Pearl Beads (100g)', price: '₱55.00', img: IMG_BEADS_PEARL },
                 { name: 'Daisy Bead Bracelets', price: '₱85.00', img: IMG_BRACELET_SCATTERED },
               ].map((item, idx) => (
                 <div key={idx} className="min-w-[280px] md:min-w-[320px] snap-start glass-card rounded-3xl overflow-hidden flex flex-col">
