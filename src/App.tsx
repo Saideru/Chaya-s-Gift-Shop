@@ -27,16 +27,17 @@ import {
 } from 'lucide-react';
 
 // Image Constants based on User Mapping
-const IMG_ANIME_GRID = '/images/anime_figurines1.jpg';
-const IMG_ANIME_BOX = '/images/anime_box.jpg';
-const IMG_BEADS_CANDY_FISH = '/images/beads_candy_fish.jpg';
-const IMG_BEADS_SQUARE = '/images/beads_square.jpg';
-const IMG_BEADS_PEARL = '/images/beads_pearl.jpg';
-const IMG_BRACELET_PILE = '/images/bracelet_pile.jpg';
-const IMG_BRACELET_SCATTERED = '/images/bracelet_scattered.jpg';
-const IMG_PLUSH_REPAIR = '/images/plush_repair.jpg';
-const IMG_LOGO = '/images/logo.jpg';
-const IMG_PROMO_BANNER = '/images/promo_banner.jpg';
+const IMG_ANIME_GRID = new URL('/images/anime_figurines1.jpg', import.meta.url).href;
+const IMG_ANIME_BOX = new URL('/images/anime_box.jpg', import.meta.url).href;
+const IMG_BEADS_CANDY_FISH = new URL('/images/beads_candy_fish.jpg', import.meta.url).href;
+const IMG_BEADS_SQUARE = new URL('/images/beads_square.jpg', import.meta.url).href;
+const IMG_BEADS_PEARL = new URL('/images/beads_pearl.jpg', import.meta.url).href;
+const IMG_BRACELET_PILE = new URL('/images/bracelet_pile.jpg', import.meta.url).href;
+const IMG_BRACELET_SCATTERED = new URL('/images/bracelet_scattered.jpg', import.meta.url).href;
+const IMG_PLUSH_REPAIR = new URL('/images/plush_repair.jpg', import.meta.url).href;
+const IMG_LOGO = new URL('/images/logo.jpg', import.meta.url).href;
+const IMG_PROMO_BANNER = new URL('/images/promo_banner.jpg', import.meta.url).href;
+
 
 const FB_URL = "https://www.facebook.com/chayasgiftshopph";
 const TIKTOK_URL = "https://tiktok.com/@chayasgiftshopph";
