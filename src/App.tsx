@@ -27,16 +27,16 @@ import {
 } from 'lucide-react';
 
 // Image Constants based on User Mapping
-const IMG_ANIME_GRID = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/anime_figurines1.jpg?alt=media&token=87e1f409-5147-4933-9114-114032d80d29";
-const IMG_ANIME_BOX = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/anime_figurines2.jpg?alt=media&token=96357700-1175-470a-867b-f47228392131";
-const IMG_BEADS_CANDY_FISH = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/beads1.jpg?alt=media&token=60505b6b-5606-444f-8367-175514f7b247";
-const IMG_BEADS_SQUARE = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/beads2.jpg?alt=media&token=2626e25f-0a78-4359-9944-d89000a63e9f";
-const IMG_BEADS_PEARL = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/beads3.jpg?alt=media&token=22026514-469a-4127-9993-9c803875355a";
-const IMG_BRACELET_PILE = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/bracelet1.jpg?alt=media&token=54734898-936b-4e19-9407-2c9386377756";
-const IMG_BRACELET_SCATTERED = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/bracelet2.jpg?alt=media&token=2506b325-0164-448f-9f76-80f08960f279";
-const IMG_PLUSH_REPAIR = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/cellphonerepair1.jpg?alt=media&token=78881f1e-0129-4318-971c-333061699923";
-const IMG_LOGO = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/Logo.jpg?alt=media&token=6618525e-379e-491c-997f-85652f75437a";
-const IMG_PROMO_BANNER = "https://storage.googleapis.com/m-infra.appspot.com/v0/b/ais-dev-gnbg6i3kcbpuepunqn7zya.firebasestorage.app/o/anime_figurines3.jpg?alt=media&token=68371305-6577-4b7b-944f-015e12810243";
+const IMG_ANIME_GRID = '/images/anime_figurines1.jpg';
+const IMG_ANIME_BOX = '/images/anime_box.jpg';
+const IMG_BEADS_CANDY_FISH = '/images/beads_candy_fish.jpg';
+const IMG_BEADS_SQUARE = '/images/beads_square.jpg';
+const IMG_BEADS_PEARL = '/images/beads_pearl.jpg';
+const IMG_BRACELET_PILE = '/images/bracelet_pile.jpg';
+const IMG_BRACELET_SCATTERED = '/images/bracelet_scattered.jpg';
+const IMG_PLUSH_REPAIR = '/images/plush_repair.jpg';
+const IMG_LOGO = '/images/logo.jpg';
+const IMG_PROMO_BANNER = '/images/promo_banner.jpg';
 
 const FB_URL = "https://www.facebook.com/chayasgiftshopph";
 const TIKTOK_URL = "https://tiktok.com/@chayasgiftshopph";
