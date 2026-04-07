@@ -28,7 +28,8 @@ import {
 
 // Image Constants based on User Mapping
 const IMG_ANIME_GRID = new URL('/images/anime_figurines1.jpg', import.meta.url).href;
-const IMG_ANIME_BOX = new URL('/images/anime_box.jpg', import.meta.url).href;
+const IMG_ANIME_POSKET = new URL('/images/anime_figurines2.jpg', import.meta.url).href;
+const IMG_ANIME_BOX = new URL('/images/anime_figurines3.jpg', import.meta.url).href;
 const IMG_BEADS_CANDY_FISH = new URL('/images/beads_candy_fish.jpg', import.meta.url).href;
 const IMG_BEADS_SQUARE = new URL('/images/beads_square.jpg', import.meta.url).href;
 const IMG_BEADS_PEARL = new URL('/images/beads_pearl.jpg', import.meta.url).href;
@@ -301,8 +302,8 @@ export default function App() {
           <div className="relative">
             <div className="flex overflow-x-auto pb-8 gap-6 snap-x no-scrollbar">
               {[
-                { name: 'Bundle Deal "21+3 FREE = 24pcs"', price: 'Promo', img: IMG_PROMO_BANNER },
-                { name: 'Q Posket Figures', price: '₱500+', img: IMG_ANIME_GRID },
+                { name: 'Bundle Deal "21+3 FREE = 24pcs"', price: 'Promo', img: IMG_ANIME_GRID },
+                { name: 'Q Posket Figures', price: '₱500+', img: IMG_ANIME_POSKET },
                 { name: 'Box Stock Anime Figures', price: '₱450+', img: IMG_ANIME_BOX },
                 { name: 'Candy/Fish Beads (50g)', price: '₱50.00', img: IMG_BEADS_CANDY_FISH },
                 { name: 'Square Candy Beads (40pcs)', price: '₱50.00', img: IMG_BEADS_SQUARE },
